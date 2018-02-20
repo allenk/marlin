@@ -24,7 +24,7 @@ REPACK_DIR="${HOME}/android/AnyKernel2"
 PATCH_DIR="${HOME}/android/AnyKernel2/patch"
 MODULES_DIR="${HOME}/android/AnyKernel2/modules"
 ZIP_MOVE="${HOME}/android/AK-releases"
-ZIMAGE_DIR="${HOME}/android/marlin/arch/arm64/boot/"
+ZIMAGE_DIR="${HOME}/android/marlin/arch/arm64/boot"
 
 # Functions
 function clean_all {
@@ -55,7 +55,7 @@ function make_dtb {
 }
 
 function make_boot {
-		cp -vr $ZIMAGE_DIR/Image.gz-dtb ~/android/AnyKernel2/zImage
+		cp -vr $ZIMAGE_DIR/Image.lz4-dtb ~/android/AnyKernel2/zImage
 }
 
 
